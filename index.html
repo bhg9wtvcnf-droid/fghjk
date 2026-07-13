@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Моя страница</title>
 
 <style>
@@ -17,6 +18,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Фото без квадрата */
 .photo {
     max-width: 90vw;
     max-height: 90vh;
@@ -35,6 +37,7 @@ body {
         transform: translateY(0);
         opacity: 1;
     }
+
     to {
         transform: translateY(-110vh);
         opacity: 0;
@@ -45,11 +48,12 @@ body {
 
 <body>
 
-<img class="photo" src="IMG_1690.jpg">
+<img class="photo" src="IMG_1690.jpg" alt="Фото">
 
 <script>
 function createHeart() {
     let heart = document.createElement("div");
+
     heart.className = "heart";
     heart.innerHTML = "❤️";
 
